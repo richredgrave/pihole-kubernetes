@@ -20,7 +20,7 @@ spec:
   externalTrafficPolicy: {{ .Values.serviceTCP.externalTrafficPolicy }}
   {{- end }}
   ports:
-    - port: 80
+    - port: 8099
       targetPort: http
       protocol: TCP
       name: http
